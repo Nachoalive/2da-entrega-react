@@ -1,11 +1,13 @@
 import CardWidget from "./CardWidget";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NavBar({ cartCount, title }) {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
+       
         <Link className="navbar-brand" to="/">
+          <img src="../src/assets/supremepreview.png" alt="SupremeFit Logo" style={{ height: '40px', marginRight: '10px' }} />
           {title}
         </Link>
         <button
@@ -24,6 +26,7 @@ function NavBar({ cartCount, title }) {
             <li className="nav-item">
               <Link
                 className="nav-link active"
+                
                 aria-current="page"
                 to="/category/Proteinas"
               >
@@ -32,17 +35,17 @@ function NavBar({ cartCount, title }) {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/category/Creatina">
-              Creatina
+                Creatina
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/category/Vitaminas">
-              Vitaminas
+                Vitaminas
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/category/Ganadores">
-              Ganadores de Masa
+                Ganadores de Masa
               </Link>
             </li>
           </ul>

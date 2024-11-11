@@ -9,7 +9,7 @@ function ItemDetailContainer() {
   useEffect(()=>{
     getProductByID(productId)
       .then((res) =>{
-        //console.log(res);
+        
         setProduct(res)
       })
   }, [productId])

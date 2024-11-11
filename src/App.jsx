@@ -1,4 +1,4 @@
-import NavBar from "./components/NavBar";
+import NavBar from "../src/Components/NavBar";
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
@@ -24,12 +24,7 @@ function App() {
           path="/detail/:productId"
           element={<ItemDetailContainer />}
         />
-        {/*
-        <Route path="/ejemplo" element={<Ejemplo />} />
-        <Route path="/manejoclick" element={<ManejoClick />} />
-        <Route path="/manejochange" element={<ManejoChange />} />
-        <Route path="/manejosubmit" element={<ManejoSubmit />} />
-        <Route path="/resolucionvocales" element={<ResolucionVocales />} /> */}
+        
       </Routes>
     </BrowserRouter>
   );
