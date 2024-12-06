@@ -74,14 +74,13 @@ const products = [
     });
   };
   
-  // obtener los productos por categoria
+  
   export const getProductsByCategory = (categoryId) => {
     return new Promise((resolve) => {
       resolve(products.filter((prod) => prod.category === categoryId));
     });
   };
   
-  // obtener un solo producto por id
   export const getProductByID = (productId) => {
     return new Promise((resolve) => {
       resolve(products.find((prod) => prod.id === productId));

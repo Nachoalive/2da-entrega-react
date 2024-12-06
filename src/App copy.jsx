@@ -4,7 +4,7 @@ function App() {
   const [view, setView] = useState("list");
   return (
     <>
-      {/* <NavBar /> */}
+      
       <button onClick={() => setView("list")}>List</button>
       <button onClick={() => setView("detail")}>Detail</button>
       <button onClick={() => setView("cart")}>Cart</button>

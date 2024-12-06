@@ -1,0 +1,54 @@
+/* Estilo base del navbar */
+.custom-navbar {
+    background-color: #333; /* Fondo oscuro */
+    padding: 1rem;
+    color: white;
+    border-bottom: 2px solid #444; /* Línea separadora */
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Estilo para los enlaces del menú */
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white; /* Color base del texto */
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    transition: color 0.3s, background-color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent; /* Para animar la línea */
+  }
+  
+  .nav-link:hover {
+    color: #ffd700; /* Color dorado al pasar el mouse */
+    border-bottom: 2px solid #ffd700; /* Línea dorada */
+  }
+  
+  /* Enlace activo */
+  .nav-link.active {
+    color: #ffd700; /* Mismo color que hover */
+    font-weight: bold;
+    border-bottom: 2px solid #ffd700; /* Línea dorada persistente */
+  }
