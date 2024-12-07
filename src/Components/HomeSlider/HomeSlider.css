@@ -1,0 +1,35 @@
+.slider-image {
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%);
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+  }
+  
+  .carousel-indicators button {
+    background-color: #8c30f5;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+  
