@@ -1,3 +1,9 @@
+Hola profe y tutores. En la rama Master podrán ver el trabajo. Intenté subirlo a infityfree para ver en línea pero al parecer es muy pesado para un host gratuito.
+Si prefieren, les dejo mi email por si hay que hacerle alguna correción. ignacio.adz@gmail.com
+
+Quedo atento. 
+Saludos!
+
 Credenciales:
  apiKey: "AIzaSyDLb0OsZxZMHYy3-gGflYZ7BXcMQdATHo4",
   authDomain: "supremefit-fbcde.firebaseapp.com",
