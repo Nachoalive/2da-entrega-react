@@ -1,4 +1,4 @@
-import { useTheme } from './context/context.jsx'; // Importa tu contexto
+import { useTheme } from './context/context.jsx';
 import NavBar from "../src/Components/Navbar/NavBar.jsx";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemListContainer from "./Components/ItemListContainer.jsx";
@@ -19,7 +19,7 @@ function App() {
         <div className={isDarkMode ? 'dark-mode' : 'light-mode'}>
           <BrowserRouter>
             <NavBar cartCount={0} title="SupremeFit" />
-            <div className="container-main"> {/* Clase añadida para espacio con el footer */}
+            <div className="container-main">
               <Routes>
                 <Route
                   exact

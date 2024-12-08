@@ -1,16 +1,15 @@
 import { createContext, useState, useContext } from 'react';
 
-// contexto
 export const ThemeContext = createContext();
 
-// uso contexto
+
 export const useTheme = () => useContext(ThemeContext);
 
-// Proveedor
-export const ThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false); // Estado inicial
 
-  //modo oscuro y claro
+export const ThemeProvider = ({ children }) => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+
   const toggleTheme = () => setIsDarkMode((prevMode) => !prevMode);
 
   return (

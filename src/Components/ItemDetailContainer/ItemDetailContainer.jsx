@@ -14,31 +14,31 @@ function ItemDetailContainer() {
   const { setNotification } = useNotification();
 
   useEffect(() => {
-    console.log("Inicio de useEffect para obtener el producto"); // Log 1
-    console.log("ID del producto recibido:", productId); // Log 2
+    console.log("Inicio de useEffect para obtener el producto");
+    console.log("ID del producto recibido:", productId);
 
     getDoc(doc(db, "products", productId))
       .then((querySnapshot) => {
         if (querySnapshot.exists()) {
           const prod = { id: querySnapshot.id, ...querySnapshot.data() };
-          console.log("Producto obtenido:", prod); // Log 3
+          console.log("Producto obtenido:", prod);
           setProduct(prod);
           setNotification("success", "Producto encontrado");
         } else {
-          console.warn("Producto no encontrado en la base de datos"); // Log 4
+          console.warn("Producto no encontrado en la base de datos");
           setNotification("warning", "Producto no encontrado");
         }
       })
       .catch((err) => {
-        console.error("Error al obtener el producto:", err); // Log 5
+        console.error("Error al obtener el producto:", err);
         setNotification("danger", "Error al obtener el producto");
       });
   }, [productId]);
 
-  console.log("Estado actual del producto:", product); // Log 6
+  console.log("Estado actual del producto:", product);
 
   if (!product) {
-    console.log("Producto aún no cargado, mostrando mensaje de carga"); // Log 7
+    console.log("Producto aún no cargado, mostrando mensaje de carga");
     return <p>Cargando producto...</p>;
   }
 

@@ -26,7 +26,7 @@ nav .logo-container .logo {
 
 nav .logo-container img {
     height: 50px;
-    margin-left: 10px; /* Controla la separación entre "SupremeFit" y el logo */
+    margin-left: 10px;
 }
 
 nav .nav-links {
@@ -106,13 +106,13 @@ footer {
     bottom: 0;
 }
 
-/* Estilo para modo claro */
+
 .light-mode {
     background-color: white;
     color: black;
   }
   
-  /* Estilo para modo oscuro */
+  
   .dark-mode {
     background-color: black;
     color: white;
